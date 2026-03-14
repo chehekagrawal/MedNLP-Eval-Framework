@@ -8,6 +8,10 @@ A comprehensive, automated evaluation and reliability framework designed to audi
 
 This project was built for the **HiLabs Generative AI in Healthcare Workshop**.
 
+## Team-mates:
+- Chehek Agrawal
+- Atharv Priyadarshi
+
 ## 📖 Table of Contents
 - [Objective](#-objective)
 - [Repository Structure](#-repository-structure)
@@ -35,7 +39,6 @@ MedNLP-Eval-Framework/
 │   └── file_comparison_chart.png
 ├── report.md                   # Highly detailed Markdown Analysis Report
 ├── README.md                   # This file
-├── generate_graphs.py          # Script to generate visualizations
 └── test.py                     # Main evaluation entry-point script
 ```
 
@@ -53,7 +56,9 @@ The report includes:
 
 ### Quick Glance: System Performance
 
-![Error Rates](assets/error_rates_bar_chart.png)
+<p align="center">
+  <img src="assets/error_rates_bar_chart.png" alt="Average Error Rates by Category" width="700">
+</p>
 
 ## 🚀 How to Run the Framework
 
@@ -63,14 +68,6 @@ The core analysis script evaluates individual medical chart outputs against grou
 ```bash
 python test.py --input test_data/chart_001.pdf --output output/chart_001.json
 ```
-
-### 2. Generate Analytical Visualizations
-Generate or update the visual metrics used in the reports based on the latest output data:
-
-```bash
-python generate_graphs.py
-```
-*(This will populate the `/assets` folder with `.png` charts).*
 
 ## 🛡️ Proposed Reliability Architecture
 
